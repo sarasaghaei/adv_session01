@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:scrollbars="horizontal">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    <fragment
+        android:id="@+id/fragment_consol"
+        android:name="ir.sarasagahei.adv_session01_1.fragment.ConsolFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:id="@+id/fragment_sofa"
+        android:name="ir.sarasagahei.adv_session01_1.fragment.SofaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:id="@+id/fragment_lampshade"
+        android:name="ir.sarasagahei.adv_session01_1.fragment.LampshadeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:id="@+id/fragment_carpet"
+        android:name="ir.sarasagahei.adv_session01_1.fragment.CarpetFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="ir.sarasagahei.adv_session01_1.fragment.ViewFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        />
+
+
+</LinearLayout>
